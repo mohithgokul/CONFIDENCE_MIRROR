@@ -8,9 +8,6 @@ const prisma = new PrismaClient();
 app.use(cors());
 app.use(express.json());
 
-console.log("🔥 THIS IS THE CORRECT SERVER.TS FILE");
-
-
 app.post("/session", async (req: Request, res: Response) => {
   try {
     const {
