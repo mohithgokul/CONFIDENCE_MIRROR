@@ -1,9 +1,9 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/server.js",
+  "private": true,
   "type": "commonjs",
+  "main": "dist/server.js",
 
   "scripts": {
     "build": "tsc",
@@ -11,23 +11,19 @@
     "dev": "nodemon server.ts"
   },
 
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-
   "dependencies": {
     "@prisma/client": "^5.22.0",
     "cors": "^2.8.6",
-    "express": "^5.2.1",
-    "prisma": "^5.22.0"
+    "express": "^5.2.1"
   },
 
   "devDependencies": {
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.6",
-    "nodemon": "^3.1.11",
+    "prisma": "^5.22.0",
+    "typescript": "^5.9.3",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "nodemon": "^3.1.11",
+    "@types/express": "^5.0.6",
+    "@types/cors": "^2.8.19"
   },
 
   "prisma": {
